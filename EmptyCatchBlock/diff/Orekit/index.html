@@ -122,26 +122,14 @@
 									
 										
 									<tr>
-										<td class="c">ThrowsCount</td>
+										<td class="c">EmptyCatchBlock</td>
 										
 										<td class="c">
-											
-												max
-												
-													<li>20000000</li>
-												
-												<br/>
 											
 										</td>
 										
 										
 										<td class="c">
-											
-												max
-												
-													<li>20000000</li>
-												
-												<br/>
 											
 										</td>
 										
@@ -236,37 +224,155 @@
 							<th>Files</th>
 							<th>Violations</th>
 							
+								<th>Severity-warning</th>
+							
 						</tr>
 						<tr class="b">
 							<td>base</td>
 							<td id="filesBase">750</td>
-							<td id="totalBase">0</td>
+							<td id="totalBase">2</td>
+							
+								<td id="warningSeverityNumBase">2</td>
 							
 						</tr>
 						<tr class="a">
 							<td>patch</td>
 							<td id="filesPatch">750</td>
-							<td id="totalPatch">0</td>
+							<td id="totalPatch">2 (2 removed, 2 added)</td>
+							
+								<td id="warningSeverityStatisticsPatch">2 (2 removed, 2 added)</td>
 							
 						</tr>
 						<tr class="d">
 							<td/>
-							<td id="filesDiff">0 files with differences</td>
-							<td id="totalDiff">0 changes in violations</td>
+							<td id="filesDiff">1 file with differences</td>
+							<td id="totalDiff">4 changes in violations</td>
+							
+								<td id="warningSeverityNumDiff">4 changes in violations</td>
 							
 						<tr>
 					</table>
 
 					
+						<br />
+						<table border="0" class="bodyTable">
+							<tr class="a">
+								<th>Report id</th>
+								
+									<th>com.puppycrawl.tools.checkstyle.checks.blocks.EmptyCatchBlockCheck</th>
+								
+							</tr>
+							<tr class="b">
+								<td>base</td>
+								
+									<td id="com.puppycrawl.tools.checkstyle.checks.blocks.EmptyCatchBlockCheckModuleNumBase">2</td>
+								
+							</tr>
+							<tr class="a">
+								<td>patch</td>
+								
+									<td id="com.puppycrawl.tools.checkstyle.checks.blocks.EmptyCatchBlockCheckModuleStatisticsPatch">2 (2 removed, 2 added)</td>
+								
+							</tr>
+							<tr class="d">
+								<td>changes in violations</td>
+								
+									<td id="com.puppycrawl.tools.checkstyle.checks.blocks.EmptyCatchBlockCheckModuleNumDiff">4</td>
+								
+							<tr>
+						</table>
+					
 
 					<br />
-					Number of unique base messages reported below: <span id="uniqueMessagesBase">0</span><br />
-					Number of unique patch messages reported below: <span id="uniqueMessagesPatch">0</span><br />
+					Number of unique base messages reported below: <span id="uniqueMessagesBase">2</span><br />
+					Number of unique patch messages reported below: <span id="uniqueMessagesPatch">2</span><br />
 				</div>
 			</div>
 
 			<div class="section">
 				<h2 a="Violations:">Violations:</h2>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/Orekit/src/test/java/org/orekit/propagation/analytical/tle/TLESeriesTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td class="keepWidth"><a name="A1" href = "#A1">#A1</a></td>
+								<td>warning</td>
+								<td>EmptyCatchBlock</td>
+								<td>Empty catch block.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/Orekit/src/test/java/org/orekit/propagation/analytical/tle/TLESeriesTest.java.html#L229">229</a></td>
+								
+								
+									<td class="keepWidth"> </td>
+									
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A2" href = "#A2">#A2</a></td>
+								<td>warning</td>
+								<td>EmptyCatchBlock</td>
+								<td>Empty catch block.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/Orekit/src/test/java/org/orekit/propagation/analytical/tle/TLESeriesTest.java.html#L229">229</a></td>
+								
+								
+									
+									<td class="keepWidth">42</td>
+								
+							</tr>
+						
+							
+								<tr class="b">
+								
+								<td class="keepWidth"><a name="A3" href = "#A3">#A3</a></td>
+								<td>warning</td>
+								<td>EmptyCatchBlock</td>
+								<td>Empty catch block.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/Orekit/src/test/java/org/orekit/propagation/analytical/tle/TLESeriesTest.java.html#L236">236</a></td>
+								
+								
+									<td class="keepWidth"> </td>
+									
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A4" href = "#A4">#A4</a></td>
+								<td>warning</td>
+								<td>EmptyCatchBlock</td>
+								<td>Empty catch block.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/Orekit/src/test/java/org/orekit/propagation/analytical/tle/TLESeriesTest.java.html#L236">236</a></td>
+								
+								
+									
+									<td class="keepWidth">42</td>
+								
+							</tr>
+						
+					</table>
+				</div>
 			</div>
 		</div>
 	</body>

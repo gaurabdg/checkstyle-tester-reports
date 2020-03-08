@@ -122,26 +122,14 @@
 									
 										
 									<tr>
-										<td class="c">ThrowsCount</td>
+										<td class="c">EmptyCatchBlock</td>
 										
 										<td class="c">
-											
-												max
-												
-													<li>20000000</li>
-												
-												<br/>
 											
 										</td>
 										
 										
 										<td class="c">
-											
-												max
-												
-													<li>20000000</li>
-												
-												<br/>
 											
 										</td>
 										
@@ -236,37 +224,121 @@
 							<th>Files</th>
 							<th>Violations</th>
 							
+								<th>Severity-warning</th>
+							
 						</tr>
 						<tr class="b">
 							<td>base</td>
 							<td id="filesBase">30</td>
-							<td id="totalBase">0</td>
+							<td id="totalBase">1</td>
+							
+								<td id="warningSeverityNumBase">1</td>
 							
 						</tr>
 						<tr class="a">
 							<td>patch</td>
 							<td id="filesPatch">30</td>
-							<td id="totalPatch">0</td>
+							<td id="totalPatch">1 (1 removed, 1 added)</td>
+							
+								<td id="warningSeverityStatisticsPatch">1 (1 removed, 1 added)</td>
 							
 						</tr>
 						<tr class="d">
 							<td/>
-							<td id="filesDiff">0 files with differences</td>
-							<td id="totalDiff">0 changes in violations</td>
+							<td id="filesDiff">1 file with differences</td>
+							<td id="totalDiff">2 changes in violations</td>
+							
+								<td id="warningSeverityNumDiff">2 changes in violations</td>
 							
 						<tr>
 					</table>
 
 					
+						<br />
+						<table border="0" class="bodyTable">
+							<tr class="a">
+								<th>Report id</th>
+								
+									<th>com.puppycrawl.tools.checkstyle.checks.blocks.EmptyCatchBlockCheck</th>
+								
+							</tr>
+							<tr class="b">
+								<td>base</td>
+								
+									<td id="com.puppycrawl.tools.checkstyle.checks.blocks.EmptyCatchBlockCheckModuleNumBase">1</td>
+								
+							</tr>
+							<tr class="a">
+								<td>patch</td>
+								
+									<td id="com.puppycrawl.tools.checkstyle.checks.blocks.EmptyCatchBlockCheckModuleStatisticsPatch">1 (1 removed, 1 added)</td>
+								
+							</tr>
+							<tr class="d">
+								<td>changes in violations</td>
+								
+									<td id="com.puppycrawl.tools.checkstyle.checks.blocks.EmptyCatchBlockCheckModuleNumDiff">2</td>
+								
+							<tr>
+						</table>
+					
 
 					<br />
-					Number of unique base messages reported below: <span id="uniqueMessagesBase">0</span><br />
-					Number of unique patch messages reported below: <span id="uniqueMessagesPatch">0</span><br />
+					Number of unique base messages reported below: <span id="uniqueMessagesBase">1</span><br />
+					Number of unique patch messages reported below: <span id="uniqueMessagesPatch">1</span><br />
 				</div>
 			</div>
 
 			<div class="section">
 				<h2 a="Violations:">Violations:</h2>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/MaterialDesignLibrary/MaterialDesign/src/com/gc/materialdesign/views/ScrollView.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td class="keepWidth"><a name="A1" href = "#A1">#A1</a></td>
+								<td>warning</td>
+								<td>EmptyCatchBlock</td>
+								<td>Empty catch block.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/MaterialDesignLibrary/MaterialDesign/src/com/gc/materialdesign/views/ScrollView.java.html#L31">31</a></td>
+								
+								
+									<td class="keepWidth"> </td>
+									
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A2" href = "#A2">#A2</a></td>
+								<td>warning</td>
+								<td>EmptyCatchBlock</td>
+								<td>Empty catch block.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/MaterialDesignLibrary/MaterialDesign/src/com/gc/materialdesign/views/ScrollView.java.html#L31">31</a></td>
+								
+								
+									
+									<td class="keepWidth">64</td>
+								
+							</tr>
+						
+					</table>
+				</div>
 			</div>
 		</div>
 	</body>
