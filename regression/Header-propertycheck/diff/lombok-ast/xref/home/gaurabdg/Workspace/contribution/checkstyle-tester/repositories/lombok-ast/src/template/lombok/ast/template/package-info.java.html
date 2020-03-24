@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/lombok-ast/src/template/lombok/ast/template/package-info.java xref</title>
+<link type="text/css" rel="stylesheet" href="../../../stylesheet.css" />
+</head>
+<body>
+<pre>
+<a class="jxr_linenumber" name="L1" href="#L1">1</a>   <em class="jxr_javadoccomment">/**</em>
+<a class="jxr_linenumber" name="L2" href="#L2">2</a>   <em class="jxr_javadoccomment"> * This package contains an Annotation Processor that will turn AST Node templates into the actual AST Node source files.</em>
+<a class="jxr_linenumber" name="L3" href="#L3">3</a>   <em class="jxr_javadoccomment"> * This package is only required to process the source files; it should not be included in the runtime distribution of {@code lombok.ast}.</em>
+<a class="jxr_linenumber" name="L4" href="#L4">4</a>   <em class="jxr_javadoccomment"> * &lt;p /&gt;</em>
+<a class="jxr_linenumber" name="L5" href="#L5">5</a>   <em class="jxr_javadoccomment"> * To create an AST Node template for a hypothetical node named {@code If}, create a class annotated with {@link GenerateAstNode} whose name</em>
+<a class="jxr_linenumber" name="L6" href="#L6">6</a>   <em class="jxr_javadoccomment"> * ends in {@code Template}. Each field then represents an AST field and will automatically be treated as such. Methods are normally ignored</em>
+<a class="jxr_linenumber" name="L7" href="#L7">7</a>   <em class="jxr_javadoccomment"> * unless you annotate them with one of the annotations in this package. Specifically:</em>
+<a class="jxr_linenumber" name="L8" href="#L8">8</a>   <em class="jxr_javadoccomment"> * &lt;dl&gt;</em>
+<a class="jxr_linenumber" name="L9" href="#L9">9</a>   <em class="jxr_javadoccomment"> * &lt;dt&gt;{@link lombok.ast.template.CopyMethod}&lt;/dt&gt;</em>
+<a class="jxr_linenumber" name="L10" href="#L10">10</a>  <em class="jxr_javadoccomment"> * &lt;dd&gt;A wrapper method will be generated in the AST Node class that calls this method. It has the same name. Annotated method must be static,</em>
+<a class="jxr_linenumber" name="L11" href="#L11">11</a>  <em class="jxr_javadoccomment"> * and the first parameter must be the generated type, e.g. {@code @CopyMethod public static boolean foo(If self, int someOtherParam) ...}.&lt;/dd&gt;</em>
+<a class="jxr_linenumber" name="L12" href="#L12">12</a>  <em class="jxr_javadoccomment"> * &lt;dt&gt;{@link lombok.ast.template.InitialValue}&lt;/dt&gt;</em>
+<a class="jxr_linenumber" name="L13" href="#L13">13</a>  <em class="jxr_javadoccomment"> * &lt;dd&gt;Use to specify a default initial value for the field. By default there is no initial value (JVM default of null).&lt;/dd&gt;</em>
+<a class="jxr_linenumber" name="L14" href="#L14">14</a>  <em class="jxr_javadoccomment"> * &lt;dt&gt;{@link lombok.ast.template.NotChildOfNode}&lt;/dt&gt;</em>
+<a class="jxr_linenumber" name="L15" href="#L15">15</a>  <em class="jxr_javadoccomment"> * &lt;dd&gt;Use to specify a field does not contain an AST Node but a terminal, such as for example the name of an identifier node.&lt;/dd&gt;</em>
+<a class="jxr_linenumber" name="L16" href="#L16">16</a>  <em class="jxr_javadoccomment"> * &lt;dt&gt;{@link lombok.ast.template.SyntaxCheck}&lt;/dt&gt;</em>
+<a class="jxr_linenumber" name="L17" href="#L17">17</a>  <em class="jxr_javadoccomment"> * &lt;dd&gt;Annotates a method to indicate it must be called to check if the node is syntactically valid. Can also be put on a type to indicate all methods in it are syntax checks.&lt;/dd&gt;</em>
+<a class="jxr_linenumber" name="L18" href="#L18">18</a>  <em class="jxr_javadoccomment"> * &lt;dt&gt;{@link lombok.ast.template.Mandatory}&lt;/dt&gt;</em>
+<a class="jxr_linenumber" name="L19" href="#L19">19</a>  <em class="jxr_javadoccomment"> * &lt;dd&gt;Indicates the field would not be {@code null} in a syntactically valid AST tree.&lt;/dd&gt;</em>
+<a class="jxr_linenumber" name="L20" href="#L20">20</a>  <em class="jxr_javadoccomment"> * &lt;/dl&gt;</em>
+<a class="jxr_linenumber" name="L21" href="#L21">21</a>  <em class="jxr_javadoccomment"> * See the javadoc of each annotation for more detailed information about how to use them.</em>
+<a class="jxr_linenumber" name="L22" href="#L22">22</a>  <em class="jxr_javadoccomment"> * </em>
+<a class="jxr_linenumber" name="L23" href="#L23">23</a>  <em class="jxr_javadoccomment"> * Examples can be found in {@code src/main/lombok/ast/Templates.java}.</em>
+<a class="jxr_linenumber" name="L24" href="#L24">24</a>  <em class="jxr_javadoccomment"> */</em>
+<a class="jxr_linenumber" name="L25" href="#L25">25</a>  <strong class="jxr_keyword">package</strong> lombok.ast.template;
+</pre>
+<hr/>
+<div id="footer"></div>
+</body>
+</html>
