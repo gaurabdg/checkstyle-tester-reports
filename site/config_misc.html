@@ -813,7 +813,7 @@ String unitAbbrev = &quot;\u03bc\u03bc\u03bc&quot;;
                 subset of tokens
                 <a href="apidocs/com/puppycrawl/tools/checkstyle/api/TokenTypes.html#SINGLE_LINE_COMMENT">
                   SINGLE_LINE_COMMENT</a>
-                ,<a href="apidocs/com/puppycrawl/tools/checkstyle/api/TokenTypes.html#BLOCK_COMMENT_BEGIN">
+                , <a href="apidocs/com/puppycrawl/tools/checkstyle/api/TokenTypes.html#BLOCK_COMMENT_BEGIN">
                   BLOCK_COMMENT_BEGIN</a>
                   .
               </td>
@@ -821,7 +821,7 @@ String unitAbbrev = &quot;\u03bc\u03bc\u03bc&quot;;
 <td>
                 <a href="apidocs/com/puppycrawl/tools/checkstyle/api/TokenTypes.html#SINGLE_LINE_COMMENT">
                   SINGLE_LINE_COMMENT</a>
-                ,<a href="apidocs/com/puppycrawl/tools/checkstyle/api/TokenTypes.html#BLOCK_COMMENT_BEGIN">
+                , <a href="apidocs/com/puppycrawl/tools/checkstyle/api/TokenTypes.html#BLOCK_COMMENT_BEGIN">
                   BLOCK_COMMENT_BEGIN</a>
                   .
               </td>
@@ -1455,11 +1455,11 @@ String unitAbbrev = &quot;\u03bc\u03bc\u03bc&quot;;
                 subset of tokens
                 <a href="apidocs/com/puppycrawl/tools/checkstyle/api/TokenTypes.html#METHOD_DEF">
                   METHOD_DEF</a>
-                ,<a href="apidocs/com/puppycrawl/tools/checkstyle/api/TokenTypes.html#CTOR_DEF">
+                , <a href="apidocs/com/puppycrawl/tools/checkstyle/api/TokenTypes.html#CTOR_DEF">
                   CTOR_DEF</a>
-                ,<a href="apidocs/com/puppycrawl/tools/checkstyle/api/TokenTypes.html#LITERAL_CATCH">
+                , <a href="apidocs/com/puppycrawl/tools/checkstyle/api/TokenTypes.html#LITERAL_CATCH">
                   LITERAL_CATCH</a>
-                ,<a href="apidocs/com/puppycrawl/tools/checkstyle/api/TokenTypes.html#FOR_EACH_CLAUSE">
+                , <a href="apidocs/com/puppycrawl/tools/checkstyle/api/TokenTypes.html#FOR_EACH_CLAUSE">
                   FOR_EACH_CLAUSE</a>
                   .
               </td>
@@ -1467,7 +1467,7 @@ String unitAbbrev = &quot;\u03bc\u03bc\u03bc&quot;;
 <td>
                 <a href="apidocs/com/puppycrawl/tools/checkstyle/api/TokenTypes.html#METHOD_DEF">
                   METHOD_DEF</a>
-                ,<a href="apidocs/com/puppycrawl/tools/checkstyle/api/TokenTypes.html#CTOR_DEF">
+                , <a href="apidocs/com/puppycrawl/tools/checkstyle/api/TokenTypes.html#CTOR_DEF">
                   CTOR_DEF</a>
                   .
               </td>
@@ -3451,6 +3451,15 @@ public class Start {
 <div class="source">
 <pre>
 &lt;module name=&quot;UpperEll&quot;/&gt;
+        </pre></div>
+        
+<div class="source">
+<pre>
+class Test {
+  long var1 = 508987; // OK
+  long var2 = 508987l; // violation
+  long var3 = 508987L; // OK
+}
         </pre></div>
       </section>
 

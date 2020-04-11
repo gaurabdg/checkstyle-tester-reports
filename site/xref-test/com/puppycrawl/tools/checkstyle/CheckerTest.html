@@ -423,7 +423,7 @@
 <a class="jxr_linenumber" name="L415" href="#L415">415</a>         checker.finishLocalSetup();
 <a class="jxr_linenumber" name="L416" href="#L416">416</a> 
 <a class="jxr_linenumber" name="L417" href="#L417">417</a>         <strong class="jxr_keyword">final</strong> Context context = Whitebox.getInternalState(checker, <span class="jxr_string">"childContext"</span>);
-<a class="jxr_linenumber" name="L418" href="#L418">418</a>         <strong class="jxr_keyword">final</strong> String encoding = System.getProperty(<span class="jxr_string">"file.encoding"</span>, StandardCharsets.UTF_8.name());
+<a class="jxr_linenumber" name="L418" href="#L418">418</a>         <strong class="jxr_keyword">final</strong> String encoding = StandardCharsets.UTF_8.name();
 <a class="jxr_linenumber" name="L419" href="#L419">419</a>         assertEquals(encoding, context.get(<span class="jxr_string">"charset"</span>), <span class="jxr_string">"Charset was different than expected"</span>);
 <a class="jxr_linenumber" name="L420" href="#L420">420</a>         assertEquals(<span class="jxr_string">"error"</span>, context.get(<span class="jxr_string">"severity"</span>), <span class="jxr_string">"Severity is set to unexpected value"</span>);
 <a class="jxr_linenumber" name="L421" href="#L421">421</a>         assertEquals(<span class="jxr_string">"testBaseDir"</span>, context.get(<span class="jxr_string">"basedir"</span>), <span class="jxr_string">"Basedir is set to unexpected value"</span>);
