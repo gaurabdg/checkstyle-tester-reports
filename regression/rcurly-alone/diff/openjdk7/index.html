@@ -1,0 +1,5850 @@
+<html>
+	<head>
+		<title>checkstyle xml difference report</title>
+		<style type="text/css" media="all">@import url("./css/maven-base.css");@import url("./css/maven-theme.css"); );</style>
+		<link rel="stylesheet" href="./css/site.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<http-equiv http-equiv="Content-Language" content="en"></http-equiv>
+	</head>
+	<body class="composite">
+		<div id="contentBox">
+			<div class="section">
+				<h2 a="Checkstyle XML difference report">Checkstyle XML difference report</h2>
+				This is symmetric difference generated from two checkstyle-result.xml reports. <br/>
+				All matching records from each XML file are deleted, then remaining records are merged into single report. <br>
+		        <a href="https://github.com/checkstyle/contribution/tree/master/patch-diff-report-tool">Utility that generated this report.</a>
+			</div>
+
+			
+				<h2 a="Checkstyle configuration report">Checkstyle configuration report</h2>
+				<div class="section">
+					<table border="0" class="bodyTable">
+							<tr class="a">
+								<th>Module Name</th>
+								<th>Base properties</th>
+								<th>Patch properties</th>
+							</tr>
+							
+								
+									<tr>
+										<td class="c">Checker</td>
+										
+										<td class="c">
+											
+												severity
+												
+													<li>warning</li>
+												
+												<br/>
+											
+												charset
+												
+													<li>UTF-8</li>
+												
+												<br/>
+											
+												haltOnException
+												
+													<li>false</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+										<td class="c">
+											
+												severity
+												
+													<li>warning</li>
+												
+												<br/>
+											
+												charset
+												
+													<li>UTF-8</li>
+												
+												<br/>
+											
+												haltOnException
+												
+													<li>false</li>
+												
+												<br/>
+											
+										</td>
+										
+									</tr>
+									
+										
+									<tr>
+										<td class="c">BeforeExecutionExclusionFileFilter</td>
+										
+										<td class="c">
+											
+												fileNamePattern
+												
+													<li>module\-info\.java$</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+										<td class="c">
+											
+												fileNamePattern
+												
+													<li>module\-info\.java$</li>
+												
+												<br/>
+											
+										</td>
+										
+									</tr>
+									
+								
+									
+										
+									<tr>
+										<td class="c">TreeWalker</td>
+										
+										<td class="c">
+											
+										</td>
+										
+										
+										<td class="c">
+											
+										</td>
+										
+									</tr>
+									
+										
+									<tr>
+										<td class="c">SuppressionXpathSingleFilter</td>
+										
+										<td class="c">
+											
+												message
+												
+													<li>Javadoc comment at column \d+ has parse error</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+										<td class="c">
+											
+												message
+												
+													<li>Javadoc comment at column \d+ has parse error</li>
+												
+												<br/>
+											
+										</td>
+										
+									</tr>
+									
+								
+									
+										
+									<tr>
+										<td class="c">UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+										
+										
+										<td> </td>
+										<td class="a">
+											
+										</td>
+										
+										
+									</tr>
+									
+								
+									
+										
+									<tr>
+										<td class="c">RightCurly</td>
+										
+										
+										<td> </td>
+										<td class="a">
+											
+												tokens
+												
+													<li>INTERFACE_DEF</li>
+												
+												<br/>
+											
+												option
+												
+													<li>alone</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+									</tr>
+									
+								
+									
+								
+									
+										
+									<tr>
+										<td class="c">SuppressionSingleFilter</td>
+										
+										<td class="c">
+											
+												checks
+												
+													<li>Checker</li>
+												
+												<br/>
+											
+												message
+												
+													<li>Exception occurred while parsing</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+										<td class="c">
+											
+												checks
+												
+													<li>Checker</li>
+												
+												<br/>
+											
+												message
+												
+													<li>Exception occurred while parsing</li>
+												
+												<br/>
+											
+										</td>
+										
+									</tr>
+									
+								
+									
+								
+								
+					</table>	
+				</div>
+			
+
+			<div class="section">
+				<h2 a="Summary:">Summary:</h2>
+				<div class="section">
+					<table border="0" class="bodyTable">
+						<tr class="a">
+							<th>Report id</th>
+							<th>Files</th>
+							<th>Violations</th>
+							
+								<th>Severity-warning</th>
+							
+						</tr>
+						<tr class="b">
+							<td>base</td>
+							<td id="filesBase">13652</td>
+							<td id="totalBase">0</td>
+							
+								<td id="warningSeverityNumBase">0</td>
+							
+						</tr>
+						<tr class="a">
+							<td>patch</td>
+							<td id="filesPatch">13652</td>
+							<td id="totalPatch">216 (216 added)</td>
+							
+								<td id="warningSeverityStatisticsPatch">216 (216 added)</td>
+							
+						</tr>
+						<tr class="d">
+							<td/>
+							<td id="filesDiff">132 files with differences</td>
+							<td id="totalDiff">216 changes in violations</td>
+							
+								<td id="warningSeverityNumDiff">216 changes in violations</td>
+							
+						<tr>
+					</table>
+
+					
+						<br />
+						<table border="0" class="bodyTable">
+							<tr class="a">
+								<th>Report id</th>
+								
+									<th>com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck</th>
+								
+									<th>com.puppycrawl.tools.checkstyle.checks.coding.UnnecessarySemicolonAfterOuterTypeDeclarationCheck</th>
+								
+							</tr>
+							<tr class="b">
+								<td>base</td>
+								
+									<td id="com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheckModuleNumBase">0</td>
+								
+									<td id="com.puppycrawl.tools.checkstyle.checks.coding.UnnecessarySemicolonAfterOuterTypeDeclarationCheckModuleNumBase">0</td>
+								
+							</tr>
+							<tr class="a">
+								<td>patch</td>
+								
+									<td id="com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheckModuleStatisticsPatch">116 (116 added)</td>
+								
+									<td id="com.puppycrawl.tools.checkstyle.checks.coding.UnnecessarySemicolonAfterOuterTypeDeclarationCheckModuleStatisticsPatch">100 (100 added)</td>
+								
+							</tr>
+							<tr class="d">
+								<td>changes in violations</td>
+								
+									<td id="com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheckModuleNumDiff">116</td>
+								
+									<td id="com.puppycrawl.tools.checkstyle.checks.coding.UnnecessarySemicolonAfterOuterTypeDeclarationCheckModuleNumDiff">100</td>
+								
+							<tr>
+						</table>
+					
+
+					<br />
+					Number of unique base messages reported below: <span id="uniqueMessagesBase">0</span><br />
+					Number of unique patch messages reported below: <span id="uniqueMessagesPatch">216</span><br />
+				</div>
+			</div>
+
+			<div class="section">
+				<h2 a="Violations:">Violations:</h2>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/com/sun/jndi/ldap/pool/PooledConnectionFactory.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A1" href = "#A1">#A1</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 1 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/com/sun/jndi/ldap/pool/PooledConnectionFactory.java.html#L47">47</a></td>
+								
+								
+									
+									<td class="keepWidth">1</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A2" href = "#A2">#A2</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/com/sun/jndi/ldap/pool/PooledConnectionFactory.java.html#L47">47</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/com/sun/jndi/toolkit/ctx/PartialCompositeContext.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A3" href = "#A3">#A3</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/com/sun/jndi/toolkit/ctx/PartialCompositeContext.java.html#L523">523</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/com/sun/nio/sctp/SctpSocketOption.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A4" href = "#A4">#A4</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 64 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/com/sun/nio/sctp/SctpSocketOption.java.html#L38">38</a></td>
+								
+								
+									
+									<td class="keepWidth">64</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/com/sun/org/apache/xml/internal/security/c14n/implementations/NameSpaceSymbTable.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A5" href = "#A5">#A5</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/com/sun/org/apache/xml/internal/security/c14n/implementations/NameSpaceSymbTable.java.html#L318">318</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/com/sun/tools/jdi/EventSetImpl.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A6" href = "#A6">#A6</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/com/sun/tools/jdi/EventSetImpl.java.html#L33">33</a></td>
+								
+								
+									
+									<td class="keepWidth">68</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/java/awt/SplashScreen.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A7" href = "#A7">#A7</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/java/awt/SplashScreen.java.html#L400">400</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/java/awt/im/InputMethodHighlight.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A8" href = "#A8">#A8</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/java/awt/im/InputMethodHighlight.java.html#L195">195</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/java/nio/file/attribute/GroupPrincipal.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A9" href = "#A9">#A9</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 57 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/java/nio/file/attribute/GroupPrincipal.java.html#L42">42</a></td>
+								
+								
+									
+									<td class="keepWidth">57</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/java/nio/file/attribute/UserPrincipal.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A10" href = "#A10">#A10</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 52 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/java/nio/file/attribute/UserPrincipal.java.html#L54">54</a></td>
+								
+								
+									
+									<td class="keepWidth">52</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/java/rmi/Remote.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A11" href = "#A11">#A11</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 26 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/java/rmi/Remote.java.html#L50">50</a></td>
+								
+								
+									
+									<td class="keepWidth">26</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/java/security/KeyStore.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A12" href = "#A12">#A12</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 51 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/java/security/KeyStore.java.html#L242">242</a></td>
+								
+								
+									
+									<td class="keepWidth">51</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A13" href = "#A13">#A13</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 37 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/java/security/KeyStore.java.html#L351">351</a></td>
+								
+								
+									
+									<td class="keepWidth">37</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/java/security/Policy.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A14" href = "#A14">#A14</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 42 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/java/security/Policy.java.html#L777">777</a></td>
+								
+								
+									
+									<td class="keepWidth">42</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/java/security/cert/CertPathValidatorException.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A15" href = "#A15">#A15</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 67 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/java/security/cert/CertPathValidatorException.java.html#L251">251</a></td>
+								
+								
+									
+									<td class="keepWidth">67</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/java/security/spec/AlgorithmParameterSpec.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A16" href = "#A16">#A16</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 43 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/java/security/spec/AlgorithmParameterSpec.java.html#L44">44</a></td>
+								
+								
+									
+									<td class="keepWidth">43</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/java/security/spec/KeySpec.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A17" href = "#A17">#A17</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 28 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/java/security/spec/KeySpec.java.html#L62">62</a></td>
+								
+								
+									
+									<td class="keepWidth">28</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/java/sql/NClob.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A18" href = "#A18">#A18</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 39 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/java/sql/NClob.java.html#L55">55</a></td>
+								
+								
+									
+									<td class="keepWidth">39</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/java/text/Annotation.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A19" href = "#A19">#A19</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/java/text/Annotation.java.html#L84">84</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/java/text/AttributedCharacterIterator.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A20" href = "#A20">#A20</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 1 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/java/text/AttributedCharacterIterator.java.html#L254">254</a></td>
+								
+								
+									
+									<td class="keepWidth">1</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A21" href = "#A21">#A21</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/java/text/AttributedCharacterIterator.java.html#L254">254</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/java/util/Collections.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A22" href = "#A22">#A22</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 74 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/java/util/Collections.java.html#L409">409</a></td>
+								
+								
+									
+									<td class="keepWidth">74</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/accessibility/AccessibleAttributeSequence.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A23" href = "#A23">#A23</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/accessibility/AccessibleAttributeSequence.java.html#L78">78</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/accessibility/AccessibleTextSequence.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A24" href = "#A24">#A24</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/accessibility/AccessibleTextSequence.java.html#L76">76</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/management/loading/PrivateClassLoader.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A25" href = "#A25">#A25</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 38 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/management/loading/PrivateClassLoader.java.html#L37">37</a></td>
+								
+								
+									
+									<td class="keepWidth">38</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/naming/Binding.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A26" href = "#A26">#A26</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/naming/Binding.java.html#L199">199</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/naming/Context.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A27" href = "#A27">#A27</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 1 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/naming/Context.java.html#L1099">1099</a></td>
+								
+								
+									
+									<td class="keepWidth">1</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A28" href = "#A28">#A28</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/naming/Context.java.html#L1099">1099</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/naming/InitialContext.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A29" href = "#A29">#A29</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/naming/InitialContext.java.html#L559">559</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/naming/LinkException.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A30" href = "#A30">#A30</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/naming/LinkException.java.html#L304">304</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/naming/NamingException.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A31" href = "#A31">#A31</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/naming/NamingException.java.html#L435">435</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/naming/NamingSecurityException.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A32" href = "#A32">#A32</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/naming/NamingSecurityException.java.html#L71">71</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/naming/Reference.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A33" href = "#A33">#A33</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/naming/Reference.java.html#L395">395</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/naming/spi/Resolver.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A34" href = "#A34">#A34</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 1 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/naming/spi/Resolver.java.html#L96">96</a></td>
+								
+								
+									
+									<td class="keepWidth">1</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A35" href = "#A35">#A35</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/naming/spi/Resolver.java.html#L96">96</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/security/auth/callback/Callback.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A36" href = "#A36">#A36</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 29 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/security/auth/callback/Callback.java.html#L52">52</a></td>
+								
+								
+									
+									<td class="keepWidth">29</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/security/auth/login/Configuration.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A37" href = "#A37">#A37</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 42 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/security/auth/login/Configuration.java.html#L623">623</a></td>
+								
+								
+									
+									<td class="keepWidth">42</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/swing/text/Caret.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A38" href = "#A38">#A38</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 1 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/swing/text/Caret.java.html#L204">204</a></td>
+								
+								
+									
+									<td class="keepWidth">1</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A39" href = "#A39">#A39</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/swing/text/Caret.java.html#L204">204</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/swing/text/Highlighter.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A40" href = "#A40">#A40</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 1 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/swing/text/Highlighter.java.html#L152">152</a></td>
+								
+								
+									
+									<td class="keepWidth">1</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A41" href = "#A41">#A41</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/swing/text/Highlighter.java.html#L152">152</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/swing/text/View.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A42" href = "#A42">#A42</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/swing/text/View.java.html#L1347">1347</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/xml/crypto/Data.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A43" href = "#A43">#A43</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 25 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/xml/crypto/Data.java.html#L42">42</a></td>
+								
+								
+									
+									<td class="keepWidth">25</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/xml/crypto/dsig/XMLSignContext.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A44" href = "#A44">#A44</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 59 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/xml/crypto/dsig/XMLSignContext.java.html#L63">63</a></td>
+								
+								
+									
+									<td class="keepWidth">59</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/xml/crypto/dsig/XMLValidateContext.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A45" href = "#A45">#A45</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 63 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/xml/crypto/dsig/XMLValidateContext.java.html#L63">63</a></td>
+								
+								
+									
+									<td class="keepWidth">63</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/xml/crypto/dsig/spec/C14NMethodParameterSpec.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A46" href = "#A46">#A46</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 74 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/xml/crypto/dsig/spec/C14NMethodParameterSpec.java.html#L43">43</a></td>
+								
+								
+									
+									<td class="keepWidth">74</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/xml/crypto/dsig/spec/DigestMethodParameterSpec.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A47" href = "#A47">#A47</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 76 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/xml/crypto/dsig/spec/DigestMethodParameterSpec.java.html#L44">44</a></td>
+								
+								
+									
+									<td class="keepWidth">76</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/xml/crypto/dsig/spec/SignatureMethodParameterSpec.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A48" href = "#A48">#A48</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 79 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/xml/crypto/dsig/spec/SignatureMethodParameterSpec.java.html#L44">44</a></td>
+								
+								
+									
+									<td class="keepWidth">79</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/xml/crypto/dsig/spec/TransformParameterSpec.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A49" href = "#A49">#A49</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 73 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/javax/xml/crypto/dsig/spec/TransformParameterSpec.java.html#L44">44</a></td>
+								
+								
+									
+									<td class="keepWidth">73</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/sun/java2d/Disposer.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A50" href = "#A50">#A50</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 5 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/sun/java2d/Disposer.java.html#L166">166</a></td>
+								
+								
+									
+									<td class="keepWidth">5</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/sun/misc/CEStreamExhausted.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A51" href = "#A51">#A51</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/sun/misc/CEStreamExhausted.java.html#L30">30</a></td>
+								
+								
+									
+									<td class="keepWidth">55</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/sun/reflect/generics/tree/BaseType.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A52" href = "#A52">#A52</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 27 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/sun/reflect/generics/tree/BaseType.java.html#L34">34</a></td>
+								
+								
+									
+									<td class="keepWidth">27</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/sun/reflect/generics/tree/FieldTypeSignature.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A53" href = "#A53">#A53</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 52 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/sun/reflect/generics/tree/FieldTypeSignature.java.html#L35">35</a></td>
+								
+								
+									
+									<td class="keepWidth">52</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/sun/reflect/generics/tree/ReturnType.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A54" href = "#A54">#A54</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 46 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/sun/reflect/generics/tree/ReturnType.java.html#L28">28</a></td>
+								
+								
+									
+									<td class="keepWidth">46</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/sun/reflect/generics/tree/Tree.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A55" href = "#A55">#A55</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 23 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/sun/reflect/generics/tree/Tree.java.html#L29">29</a></td>
+								
+								
+									
+									<td class="keepWidth">23</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/sun/reflect/generics/tree/TypeArgument.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A56" href = "#A56">#A56</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 49 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/sun/reflect/generics/tree/TypeArgument.java.html#L32">32</a></td>
+								
+								
+									
+									<td class="keepWidth">49</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/sun/reflect/generics/tree/TypeSignature.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A57" href = "#A57">#A57</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 52 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/sun/reflect/generics/tree/TypeSignature.java.html#L34">34</a></td>
+								
+								
+									
+									<td class="keepWidth">52</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/sun/security/krb5/internal/AuthContext.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A58" href = "#A58">#A58</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/sun/security/krb5/internal/AuthContext.java.html#L52">52</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/sun/security/krb5/internal/crypto/Aes128.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A59" href = "#A59">#A59</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/sun/security/krb5/internal/crypto/Aes128.java.html#L85">85</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/sun/security/krb5/internal/crypto/Aes256.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A60" href = "#A60">#A60</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/sun/security/krb5/internal/crypto/Aes256.java.html#L88">88</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/sun/security/krb5/internal/crypto/ArcFourHmac.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A61" href = "#A61">#A61</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/sun/security/krb5/internal/crypto/ArcFourHmac.java.html#L100">100</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/sun/security/krb5/internal/crypto/Des3.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A62" href = "#A62">#A62</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/sun/security/krb5/internal/crypto/Des3.java.html#L91">91</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/sun/text/CompactByteArray.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A63" href = "#A63">#A63</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/sun/text/CompactByteArray.java.html#L352">352</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/sun/text/UCompactIntArray.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A64" href = "#A64">#A64</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/sun/text/UCompactIntArray.java.html#L205">205</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/sun/tools/javac/ErrorConsumer.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A65" href = "#A65">#A65</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 1 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/sun/tools/javac/ErrorConsumer.java.html#L42">42</a></td>
+								
+								
+									
+									<td class="keepWidth">1</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A66" href = "#A66">#A66</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/classes/sun/tools/javac/ErrorConsumer.java.html#L42">42</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/demo/applets/DitherTest/DitherTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A67" href = "#A67">#A67</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/src/share/demo/applets/DitherTest/DitherTest.java.html#L62">62</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/com/sun/jdi/AccessSpecifierTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A68" href = "#A68">#A68</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 51 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/com/sun/jdi/AccessSpecifierTest.java.html#L45">45</a></td>
+								
+								
+									
+									<td class="keepWidth">51</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A69" href = "#A69">#A69</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 47 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/com/sun/jdi/AccessSpecifierTest.java.html#L108">108</a></td>
+								
+								
+									
+									<td class="keepWidth">47</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Externalizable/definesWriteObject/DefinesWriteObject.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A70" href = "#A70">#A70</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Externalizable/definesWriteObject/DefinesWriteObject.java.html#L104">104</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/InvalidClassException/noargctor/DefaultPackage.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A71" href = "#A71">#A71</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/InvalidClassException/noargctor/DefaultPackage.java.html#L35">35</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A72" href = "#A72">#A72</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/InvalidClassException/noargctor/DefaultPackage.java.html#L40">40</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A73" href = "#A73">#A73</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/InvalidClassException/noargctor/DefaultPackage.java.html#L45">45</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A74" href = "#A74">#A74</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/InvalidClassException/noargctor/DefaultPackage.java.html#L54">54</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A75" href = "#A75">#A75</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/InvalidClassException/noargctor/DefaultPackage.java.html#L60">60</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A76" href = "#A76">#A76</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/InvalidClassException/noargctor/DefaultPackage.java.html#L66">66</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A77" href = "#A77">#A77</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/InvalidClassException/noargctor/DefaultPackage.java.html#L72">72</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A78" href = "#A78">#A78</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/InvalidClassException/noargctor/DefaultPackage.java.html#L82">82</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A79" href = "#A79">#A79</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/InvalidClassException/noargctor/DefaultPackage.java.html#L93">93</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A80" href = "#A80">#A80</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/InvalidClassException/noargctor/DefaultPackage.java.html#L104">104</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A81" href = "#A81">#A81</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/InvalidClassException/noargctor/DefaultPackage.java.html#L115">115</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A82" href = "#A82">#A82</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/InvalidClassException/noargctor/DefaultPackage.java.html#L128">128</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/InvalidClassException/noargctor/NonSerialize/PackageCtor.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A83" href = "#A83">#A83</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/InvalidClassException/noargctor/NonSerialize/PackageCtor.java.html#L35">35</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/InvalidClassException/noargctor/NonSerialize/PrivateCtor.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A84" href = "#A84">#A84</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/InvalidClassException/noargctor/NonSerialize/PrivateCtor.java.html#L36">36</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/InvalidClassException/noargctor/NonSerialize/ProtectedCtor.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A85" href = "#A85">#A85</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/InvalidClassException/noargctor/NonSerialize/ProtectedCtor.java.html#L33">33</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/InvalidClassException/noargctor/NonSerialize/PublicCtor.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A86" href = "#A86">#A86</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/InvalidClassException/noargctor/NonSerialize/PublicCtor.java.html#L33">33</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/InvalidClassException/noargctor/Serialize/SamePackageCtor.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A87" href = "#A87">#A87</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/InvalidClassException/noargctor/Serialize/SamePackageCtor.java.html#L33">33</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/InvalidClassException/noargctor/Serialize/SubclassAcrossPackage.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A88" href = "#A88">#A88</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/InvalidClassException/noargctor/Serialize/SubclassAcrossPackage.java.html#L38">38</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A89" href = "#A89">#A89</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/InvalidClassException/noargctor/Serialize/SubclassAcrossPackage.java.html#L44">44</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A90" href = "#A90">#A90</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/InvalidClassException/noargctor/Serialize/SubclassAcrossPackage.java.html#L53">53</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A91" href = "#A91">#A91</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/InvalidClassException/noargctor/Serialize/SubclassAcrossPackage.java.html#L60">60</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A92" href = "#A92">#A92</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/InvalidClassException/noargctor/Serialize/SubclassAcrossPackage.java.html#L65">65</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A93" href = "#A93">#A93</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/InvalidClassException/noargctor/Serialize/SubclassAcrossPackage.java.html#L72">72</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A94" href = "#A94">#A94</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/InvalidClassException/noargctor/Serialize/SubclassAcrossPackage.java.html#L80">80</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A95" href = "#A95">#A95</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/InvalidClassException/noargctor/Serialize/SubclassAcrossPackage.java.html#L88">88</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A96" href = "#A96">#A96</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/InvalidClassException/noargctor/Serialize/SubclassAcrossPackage.java.html#L98">98</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A97" href = "#A97">#A97</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/InvalidClassException/noargctor/Serialize/SubclassAcrossPackage.java.html#L109">109</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A98" href = "#A98">#A98</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/InvalidClassException/noargctor/Serialize/SubclassAcrossPackage.java.html#L120">120</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A99" href = "#A99">#A99</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/InvalidClassException/noargctor/Serialize/SubclassAcrossPackage.java.html#L131">131</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A100" href = "#A100">#A100</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/InvalidClassException/noargctor/Serialize/SubclassAcrossPackage.java.html#L144">144</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/NoClassDefFoundErrorTrap/NoClassDefFoundErrorTrap.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A101" href = "#A101">#A101</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 27 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/NoClassDefFoundErrorTrap/NoClassDefFoundErrorTrap.java.html#L42">42</a></td>
+								
+								
+									
+									<td class="keepWidth">27</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/checkModifiers/CheckModifiers.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A102" href = "#A102">#A102</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/checkModifiers/CheckModifiers.java.html#L78">78</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A103" href = "#A103">#A103</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/checkModifiers/CheckModifiers.java.html#L121">121</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A104" href = "#A104">#A104</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/checkModifiers/CheckModifiers.java.html#L156">156</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A105" href = "#A105">#A105</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/checkModifiers/CheckModifiers.java.html#L197">197</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A106" href = "#A106">#A106</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/checkModifiers/CheckModifiers.java.html#L251">251</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/class/NonSerialA_1.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A107" href = "#A107">#A107</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/class/NonSerialA_1.java.html#L27">27</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/class/NonSerialA_2.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A108" href = "#A108">#A108</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/class/NonSerialA_2.java.html#L27">27</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/class/SerialA.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A109" href = "#A109">#A109</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/class/SerialA.java.html#L28">28</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/class/SerialA_1.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A110" href = "#A110">#A110</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/class/SerialA_1.java.html#L28">28</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/class/SerialA_2.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A111" href = "#A111">#A111</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/class/SerialA_2.java.html#L31">31</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/class/SerialA_3.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A112" href = "#A112">#A112</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/class/SerialA_3.java.html#L31">31</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/defaulted/GetFieldRead.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A113" href = "#A113">#A113</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/defaulted/GetFieldRead.java.html#L100">100</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A114" href = "#A114">#A114</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/defaulted/GetFieldRead.java.html#L111">111</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/defaulted/GetFieldWrite.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A115" href = "#A115">#A115</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/defaulted/GetFieldWrite.java.html#L57">57</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A116" href = "#A116">#A116</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/defaulted/GetFieldWrite.java.html#L69">69</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/evolution/AddedField/ReadAddedField.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A117" href = "#A117">#A117</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/evolution/AddedField/ReadAddedField.java.html#L38">38</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/evolution/AddedField/WriteAddedField.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A118" href = "#A118">#A118</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/evolution/AddedField/WriteAddedField.java.html#L45">45</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A119" href = "#A119">#A119</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/evolution/AddedField/WriteAddedField.java.html#L50">50</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/proxy/Basic.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A120" href = "#A120">#A120</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 28 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/proxy/Basic.java.html#L33">33</a></td>
+								
+								
+									
+									<td class="keepWidth">28</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A121" href = "#A121">#A121</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 30 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/proxy/Basic.java.html#L34">34</a></td>
+								
+								
+									
+									<td class="keepWidth">30</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/proxy/replace/Resolved.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A122" href = "#A122">#A122</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 28 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/proxy/replace/Resolved.java.html#L28">28</a></td>
+								
+								
+									
+									<td class="keepWidth">28</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/proxy/skipMissing/Write.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A123" href = "#A123">#A123</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 14 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/proxy/skipMissing/Write.java.html#L40">40</a></td>
+								
+								
+									
+									<td class="keepWidth">14</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/subclass/AbstractObjectInputStream.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A124" href = "#A124">#A124</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/subclass/AbstractObjectInputStream.java.html#L321">321</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/subclass/AbstractObjectOutputStream.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A125" href = "#A125">#A125</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/subclass/AbstractObjectOutputStream.java.html#L253">253</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/subclass/Test.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A126" href = "#A126">#A126</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/subclass/Test.java.html#L67">67</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A127" href = "#A127">#A127</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/subclass/Test.java.html#L96">96</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A128" href = "#A128">#A128</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/subclass/Test.java.html#L112">112</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A129" href = "#A129">#A129</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/subclass/Test.java.html#L152">152</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/subclass/XObjectInputStream.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A130" href = "#A130">#A130</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/subclass/XObjectInputStream.java.html#L328">328</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/subclass/XObjectOutputStream.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A131" href = "#A131">#A131</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/subclass/XObjectOutputStream.java.html#L364">364</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/typeSafeEnum/TypeSafeEnum.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A132" href = "#A132">#A132</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/io/Serializable/typeSafeEnum/TypeSafeEnum.java.html#L158">158</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/lang/Class/getMethods/StarInheritance.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A133" href = "#A133">#A133</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 30 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/lang/Class/getMethods/StarInheritance.java.html#L35">35</a></td>
+								
+								
+									
+									<td class="keepWidth">30</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A134" href = "#A134">#A134</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 26 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/lang/Class/getMethods/StarInheritance.java.html#L36">36</a></td>
+								
+								
+									
+									<td class="keepWidth">26</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A135" href = "#A135">#A135</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 26 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/lang/Class/getMethods/StarInheritance.java.html#L37">37</a></td>
+								
+								
+									
+									<td class="keepWidth">26</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A136" href = "#A136">#A136</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 26 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/lang/Class/getMethods/StarInheritance.java.html#L38">38</a></td>
+								
+								
+									
+									<td class="keepWidth">26</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A137" href = "#A137">#A137</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 41 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/lang/Class/getMethods/StarInheritance.java.html#L41">41</a></td>
+								
+								
+									
+									<td class="keepWidth">41</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A138" href = "#A138">#A138</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 26 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/lang/Class/getMethods/StarInheritance.java.html#L42">42</a></td>
+								
+								
+									
+									<td class="keepWidth">26</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A139" href = "#A139">#A139</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 26 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/lang/Class/getMethods/StarInheritance.java.html#L43">43</a></td>
+								
+								
+									
+									<td class="keepWidth">26</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A140" href = "#A140">#A140</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 26 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/lang/Class/getMethods/StarInheritance.java.html#L44">44</a></td>
+								
+								
+									
+									<td class="keepWidth">26</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A141" href = "#A141">#A141</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 30 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/lang/Class/getMethods/StarInheritance.java.html#L47">47</a></td>
+								
+								
+									
+									<td class="keepWidth">30</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A142" href = "#A142">#A142</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 37 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/lang/Class/getMethods/StarInheritance.java.html#L48">48</a></td>
+								
+								
+									
+									<td class="keepWidth">37</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A143" href = "#A143">#A143</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 37 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/lang/Class/getMethods/StarInheritance.java.html#L49">49</a></td>
+								
+								
+									
+									<td class="keepWidth">37</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A144" href = "#A144">#A144</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 27 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/lang/Class/getMethods/StarInheritance.java.html#L50">50</a></td>
+								
+								
+									
+									<td class="keepWidth">27</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A145" href = "#A145">#A145</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 30 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/lang/Class/getMethods/StarInheritance.java.html#L53">53</a></td>
+								
+								
+									
+									<td class="keepWidth">30</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A146" href = "#A146">#A146</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 37 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/lang/Class/getMethods/StarInheritance.java.html#L54">54</a></td>
+								
+								
+									
+									<td class="keepWidth">37</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A147" href = "#A147">#A147</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 26 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/lang/Class/getMethods/StarInheritance.java.html#L55">55</a></td>
+								
+								
+									
+									<td class="keepWidth">26</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A148" href = "#A148">#A148</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 26 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/lang/Class/getMethods/StarInheritance.java.html#L56">56</a></td>
+								
+								
+									
+									<td class="keepWidth">26</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/lang/invoke/indify/Indify.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A149" href = "#A149">#A149</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 70 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/lang/invoke/indify/Indify.java.html#L1252">1252</a></td>
+								
+								
+									
+									<td class="keepWidth">70</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/lang/management/ManagementFactory/GetPlatformMXBeans.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A150" href = "#A150">#A150</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 57 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/lang/management/ManagementFactory/GetPlatformMXBeans.java.html#L225">225</a></td>
+								
+								
+									
+									<td class="keepWidth">57</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/lang/reflect/Generics/TestPlainArrayNotGeneric.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A151" href = "#A151">#A151</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 73 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/lang/reflect/Generics/TestPlainArrayNotGeneric.java.html#L61">61</a></td>
+								
+								
+									
+									<td class="keepWidth">73</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A152" href = "#A152">#A152</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 36 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/lang/reflect/Generics/TestPlainArrayNotGeneric.java.html#L63">63</a></td>
+								
+								
+									
+									<td class="keepWidth">36</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/lang/reflect/Method/InheritedMethods.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A153" href = "#A153">#A153</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 34 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/lang/reflect/Method/InheritedMethods.java.html#L42">42</a></td>
+								
+								
+									
+									<td class="keepWidth">34</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/net/URLConnection/Redirect307Test.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A154" href = "#A154">#A154</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/net/URLConnection/Redirect307Test.java.html#L88">88</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/net/URLConnection/RedirectLimit.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A155" href = "#A155">#A155</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/net/URLConnection/RedirectLimit.java.html#L90">90</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/rmi/Naming/legalRegistryNames/Legal.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A156" href = "#A156">#A156</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 40 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/rmi/Naming/legalRegistryNames/Legal.java.html#L28">28</a></td>
+								
+								
+									
+									<td class="keepWidth">40</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A157" href = "#A157">#A157</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/rmi/Naming/legalRegistryNames/Legal.java.html#L28">28</a></td>
+								
+								
+									
+									<td class="keepWidth">41</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/rmi/reliability/benchmark/bench/serial/ProxyClassDesc.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A158" href = "#A158">#A158</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 26 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/rmi/reliability/benchmark/bench/serial/ProxyClassDesc.java.html#L42">42</a></td>
+								
+								
+									
+									<td class="keepWidth">26</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A159" href = "#A159">#A159</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 26 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/rmi/reliability/benchmark/bench/serial/ProxyClassDesc.java.html#L43">43</a></td>
+								
+								
+									
+									<td class="keepWidth">26</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A160" href = "#A160">#A160</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 26 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/rmi/reliability/benchmark/bench/serial/ProxyClassDesc.java.html#L44">44</a></td>
+								
+								
+									
+									<td class="keepWidth">26</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A161" href = "#A161">#A161</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 26 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/rmi/reliability/benchmark/bench/serial/ProxyClassDesc.java.html#L45">45</a></td>
+								
+								
+									
+									<td class="keepWidth">26</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A162" href = "#A162">#A162</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 26 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/rmi/reliability/benchmark/bench/serial/ProxyClassDesc.java.html#L46">46</a></td>
+								
+								
+									
+									<td class="keepWidth">26</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A163" href = "#A163">#A163</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 26 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/rmi/reliability/benchmark/bench/serial/ProxyClassDesc.java.html#L47">47</a></td>
+								
+								
+									
+									<td class="keepWidth">26</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A164" href = "#A164">#A164</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 26 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/rmi/reliability/benchmark/bench/serial/ProxyClassDesc.java.html#L48">48</a></td>
+								
+								
+									
+									<td class="keepWidth">26</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A165" href = "#A165">#A165</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 26 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/rmi/reliability/benchmark/bench/serial/ProxyClassDesc.java.html#L49">49</a></td>
+								
+								
+									
+									<td class="keepWidth">26</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A166" href = "#A166">#A166</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 26 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/rmi/reliability/benchmark/bench/serial/ProxyClassDesc.java.html#L50">50</a></td>
+								
+								
+									
+									<td class="keepWidth">26</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A167" href = "#A167">#A167</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 26 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/rmi/reliability/benchmark/bench/serial/ProxyClassDesc.java.html#L51">51</a></td>
+								
+								
+									
+									<td class="keepWidth">26</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A168" href = "#A168">#A168</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 26 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/rmi/reliability/benchmark/bench/serial/ProxyClassDesc.java.html#L52">52</a></td>
+								
+								
+									
+									<td class="keepWidth">26</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A169" href = "#A169">#A169</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 26 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/rmi/reliability/benchmark/bench/serial/ProxyClassDesc.java.html#L53">53</a></td>
+								
+								
+									
+									<td class="keepWidth">26</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A170" href = "#A170">#A170</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 26 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/rmi/reliability/benchmark/bench/serial/ProxyClassDesc.java.html#L54">54</a></td>
+								
+								
+									
+									<td class="keepWidth">26</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A171" href = "#A171">#A171</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 26 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/rmi/reliability/benchmark/bench/serial/ProxyClassDesc.java.html#L55">55</a></td>
+								
+								
+									
+									<td class="keepWidth">26</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A172" href = "#A172">#A172</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 26 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/rmi/reliability/benchmark/bench/serial/ProxyClassDesc.java.html#L56">56</a></td>
+								
+								
+									
+									<td class="keepWidth">26</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/rmi/server/RMIClassLoader/loadProxyClasses/NonpublicInterface.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A173" href = "#A173">#A173</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 31 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/rmi/server/RMIClassLoader/loadProxyClasses/NonpublicInterface.java.html#L28">28</a></td>
+								
+								
+									
+									<td class="keepWidth">31</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/rmi/server/RMIClassLoader/loadProxyClasses/NonpublicInterface1.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A174" href = "#A174">#A174</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 32 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/rmi/server/RMIClassLoader/loadProxyClasses/NonpublicInterface1.java.html#L28">28</a></td>
+								
+								
+									
+									<td class="keepWidth">32</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/rmi/server/RMIClassLoader/loadProxyClasses/PublicInterface.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A175" href = "#A175">#A175</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 35 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/rmi/server/RMIClassLoader/loadProxyClasses/PublicInterface.java.html#L28">28</a></td>
+								
+								
+									
+									<td class="keepWidth">35</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/rmi/server/RMIClassLoader/loadProxyClasses/PublicInterface1.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A176" href = "#A176">#A176</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 36 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/rmi/server/RMIClassLoader/loadProxyClasses/PublicInterface1.java.html#L28">28</a></td>
+								
+								
+									
+									<td class="keepWidth">36</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/security/UnresolvedPermission/DebugPermission0.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A177" href = "#A177">#A177</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/security/UnresolvedPermission/DebugPermission0.java.html#L45">45</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/security/UnresolvedPermission/DebugPermission1.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A178" href = "#A178">#A178</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/security/UnresolvedPermission/DebugPermission1.java.html#L45">45</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/security/UnresolvedPermission/DebugPermission2.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A179" href = "#A179">#A179</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/security/UnresolvedPermission/DebugPermission2.java.html#L45">45</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/security/UnresolvedPermission/DebugPermissionBad.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A180" href = "#A180">#A180</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/security/UnresolvedPermission/DebugPermissionBad.java.html#L45">45</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/util/Hashtable/ReadObject.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A181" href = "#A181">#A181</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/java/util/Hashtable/ReadObject.java.html#L101">101</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/Introspector/AnnotationTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A182" href = "#A182">#A182</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 61 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/Introspector/AnnotationTest.java.html#L198">198</a></td>
+								
+								
+									
+									<td class="keepWidth">61</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/Introspector/ChangingNotifsTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A183" href = "#A183">#A183</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 41 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/Introspector/ChangingNotifsTest.java.html#L39">39</a></td>
+								
+								
+									
+									<td class="keepWidth">41</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A184" href = "#A184">#A184</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 42 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/Introspector/ChangingNotifsTest.java.html#L41">41</a></td>
+								
+								
+									
+									<td class="keepWidth">42</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/Introspector/FeatureOrderTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A185" href = "#A185">#A185</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 61 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/Introspector/FeatureOrderTest.java.html#L86">86</a></td>
+								
+								
+									
+									<td class="keepWidth">61</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/Introspector/ImmutableNotificationInfoTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A186" href = "#A186">#A186</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 44 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/Introspector/ImmutableNotificationInfoTest.java.html#L46">46</a></td>
+								
+								
+									
+									<td class="keepWidth">44</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A187" href = "#A187">#A187</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 42 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/Introspector/ImmutableNotificationInfoTest.java.html#L47">47</a></td>
+								
+								
+									
+									<td class="keepWidth">42</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A188" href = "#A188">#A188</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 40 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/Introspector/ImmutableNotificationInfoTest.java.html#L48">48</a></td>
+								
+								
+									
+									<td class="keepWidth">40</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/MBeanServer/MBeanServerNotificationTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A189" href = "#A189">#A189</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 42 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/MBeanServer/MBeanServerNotificationTest.java.html#L129">129</a></td>
+								
+								
+									
+									<td class="keepWidth">42</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/MBeanServer/NewMBeanListenerTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A190" href = "#A190">#A190</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 47 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/MBeanServer/NewMBeanListenerTest.java.html#L100">100</a></td>
+								
+								
+									
+									<td class="keepWidth">47</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/MBeanServer/PostRegisterDeadlockTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A191" href = "#A191">#A191</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 42 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/MBeanServer/PostRegisterDeadlockTest.java.html#L39">39</a></td>
+								
+								
+									
+									<td class="keepWidth">42</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/MBeanServer/PostRegisterDeadlockTest2.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A192" href = "#A192">#A192</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 41 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/MBeanServer/PostRegisterDeadlockTest2.java.html#L37">37</a></td>
+								
+								
+									
+									<td class="keepWidth">41</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/MBeanServer/PreDeregisterDeadlockTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A193" href = "#A193">#A193</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 42 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/MBeanServer/PreDeregisterDeadlockTest.java.html#L38">38</a></td>
+								
+								
+									
+									<td class="keepWidth">42</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A194" href = "#A194">#A194</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 42 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/MBeanServer/PreDeregisterDeadlockTest.java.html#L82">82</a></td>
+								
+								
+									
+									<td class="keepWidth">42</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/loading/ArrayClassTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A195" href = "#A195">#A195</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 45 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/loading/ArrayClassTest.java.html#L103">103</a></td>
+								
+								
+									
+									<td class="keepWidth">45</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/loading/SystemClassLoaderTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A196" href = "#A196">#A196</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 40 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/loading/SystemClassLoaderTest.java.html#L77">77</a></td>
+								
+								
+									
+									<td class="keepWidth">40</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/mxbean/InvalidMXBeanRegistrationTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A197" href = "#A197">#A197</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 34 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/mxbean/InvalidMXBeanRegistrationTest.java.html#L42">42</a></td>
+								
+								
+									
+									<td class="keepWidth">34</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A198" href = "#A198">#A198</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 40 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/mxbean/InvalidMXBeanRegistrationTest.java.html#L46">46</a></td>
+								
+								
+									
+									<td class="keepWidth">40</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/mxbean/MXBeanAnnotationTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A199" href = "#A199">#A199</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 36 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/mxbean/MXBeanAnnotationTest.java.html#L38">38</a></td>
+								
+								
+									
+									<td class="keepWidth">36</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A200" href = "#A200">#A200</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 40 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/mxbean/MXBeanAnnotationTest.java.html#L43">43</a></td>
+								
+								
+									
+									<td class="keepWidth">40</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/mxbean/MXBeanFlagTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A201" href = "#A201">#A201</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 40 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/mxbean/MXBeanFlagTest.java.html#L38">38</a></td>
+								
+								
+									
+									<td class="keepWidth">40</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A202" href = "#A202">#A202</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 40 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/mxbean/MXBeanFlagTest.java.html#L41">41</a></td>
+								
+								
+									
+									<td class="keepWidth">40</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A203" href = "#A203">#A203</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 39 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/mxbean/MXBeanFlagTest.java.html#L44">44</a></td>
+								
+								
+									
+									<td class="keepWidth">39</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A204" href = "#A204">#A204</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 39 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/mxbean/MXBeanFlagTest.java.html#L47">47</a></td>
+								
+								
+									
+									<td class="keepWidth">39</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/mxbean/MXBeanPreRegisterTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A205" href = "#A205">#A205</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 41 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/mxbean/MXBeanPreRegisterTest.java.html#L38">38</a></td>
+								
+								
+									
+									<td class="keepWidth">41</td>
+								
+							</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A206" href = "#A206">#A206</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 61 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/mxbean/MXBeanPreRegisterTest.java.html#L40">40</a></td>
+								
+								
+									
+									<td class="keepWidth">61</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/mxbean/MXBeanTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A207" href = "#A207">#A207</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 71 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/mxbean/MXBeanTest.java.html#L106">106</a></td>
+								
+								
+									
+									<td class="keepWidth">71</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/mxbean/PreRegisterNameTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A208" href = "#A208">#A208</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 42 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/mxbean/PreRegisterNameTest.java.html#L45">45</a></td>
+								
+								
+									
+									<td class="keepWidth">42</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/mxbean/SameObjectTwoNamesTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A209" href = "#A209">#A209</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 43 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/mxbean/SameObjectTwoNamesTest.java.html#L72">72</a></td>
+								
+								
+									
+									<td class="keepWidth">43</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/query/InstanceOfExpTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A210" href = "#A210">#A210</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 42 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/query/InstanceOfExpTest.java.html#L42">42</a></td>
+								
+								
+									
+									<td class="keepWidth">42</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/remote/mandatory/connection/BrokenConnectionTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A211" href = "#A211">#A211</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 49 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/remote/mandatory/connection/BrokenConnectionTest.java.html#L445">445</a></td>
+								
+								
+									
+									<td class="keepWidth">49</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/remote/mandatory/notif/DeadListenerTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A212" href = "#A212">#A212</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 41 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/management/remote/mandatory/notif/DeadListenerTest.java.html#L169">169</a></td>
+								
+								
+									
+									<td class="keepWidth">41</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/script/CauseExceptionTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A213" href = "#A213">#A213</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/script/CauseExceptionTest.java.html#L53">53</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/script/StringWriterPrintTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A214" href = "#A214">#A214</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/script/StringWriterPrintTest.java.html#L48">48</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/script/UnescapedBracketRegExTest.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A215" href = "#A215">#A215</a></td>
+								<td>warning</td>
+								<td>UnnecessarySemicolonAfterOuterTypeDeclaration</td>
+								<td>Unnecessary semicolon.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/javax/script/UnescapedBracketRegExTest.java.html#L44">44</a></td>
+								
+								
+									
+									<td class="keepWidth">2</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/sun/rmi/rmic/RMIGenerator/packagedir/RmicMeInterface.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="a">
+							
+								<td class="keepWidth"><a name="A216" href = "#A216">#A216</a></td>
+								<td>warning</td>
+								<td>RightCurly</td>
+								<td>&#39;}&#39; at column 50 should be alone on a line.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/gaurabdg/Workspace/contribution/checkstyle-tester/repositories/openjdk7/test/sun/rmi/rmic/RMIGenerator/packagedir/RmicMeInterface.java.html#L32">32</a></td>
+								
+								
+									
+									<td class="keepWidth">50</td>
+								
+							</tr>
+						
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
